@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<link rel="stylesheet" type="text/css" href="pages.css">
+	<section class="project-list">
+		<div class="grid-container">
+			<div class="profile-desc">
+				<h1 class="name-desc">Walter Svenddal</h1>
+				<p><a href="about.html">About Me</a>
+				</br><a href="career.html">Career</a>
+				</br><a href="../index.html">Projects</a>
+				</br><a href="resources.html">Resources</a>
+				</p>
+			</div>
+			<div class="content">
+				<img class="top-pic" src="../images/roomba_app.png">
+				<h1>
+					Cybot Navigational Robot
+				</h1>
+				<p>
+					In my CPRE 288: Embedded Systems course, we spent the semester programming modified Roomba robots to 
+					navigate an	obstacle course of PVC pipes. Our roomba was modified, with an attached microcontroller
+					we could program to intruct the roomba, read and write UART and wifi signals, and read sensor data.
+					By reading sensor data and telling the roomba where to move, students could either remotely control
+					the roomba through an unknown randomized course or attempt to program it to autonomously travel
+					through the course.
+				</br></br>
+					One of my great accomplishments during this course was the development of a visual display of what
+					the robot's sensors were reading that allowed me to traverse the obstacle course in half the time
+					as the next fastest robot. The roomba would send data to a Java swing application, which would then
+					plot where it believed pillars or obstacles existed in the obstacle course. It would also show the
+					elements in the obstacle course moving as the robot did, which gave us an advantage in not having to
+					rescan the area every time the robot moves.
+				</br></br>
+					Source code for the vision GUI can be found on the
+					<a href="https://github.com/svew/roomba-vision-gui">
+						project page
+					</a>
+				</p>
+			</div>
+		</div>
+	</section>
+</html>

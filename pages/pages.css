@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400i,900');
+
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+	--main-text-color: #f8f8f8;
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+	font-weight: 300;
+	line-height: 1.6;
+	background-color: #0b2027;
+	color: var(--main-text-color);
+}
+
+p {
+	color: var(--main-text-color);
+}
+
+job h1 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+job h3 {
+	text-align: center;
+}
+
+ul {
+	list-style: circle;
+}
+
+a {
+	color: #2eccf3;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ebdd1e;
+}
+
+.top-pic {
+	max-width: 80%;
+	max-height: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.grid-container {
+	width: 95%;
+	max-width: 900px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 1em;
+}
+
+@media (min-width: 52em) {
+	.grid-container {
+		/*grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));*/
+		grid-template-columns: 300px auto;
+	}
+}
+
+.project-list {
+	background-color: #0b2027;
+	padding: 5em 0;
+	color: rgba(#f8f8f8, .6);
+}
+
+.profile-desc {
+	grid-column: span 2;
+}
+
+.content {
+	overflow: auto;
+}
+
+@media (min-width: 52em) {
+	.profile-desc {
+    	grid-column: auto;
+    	grid-row: span 1;
+    	/*align-self: center;*/
+	}
+}
+
+.name-desc {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 3rem;
+	color: #f8f8f8;
+	margin-top: 0;
+	line-height: 1;
+}
+
+.team-title span {
+    display: block;
+	font-weight: 900;
+}
+
+.team-member {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+  
+.team-member img {
+    width: 100%;
+    display: block;
+}
+  
+.team-member figcaption {
+    position: absolute;
+    top: 1em;
+    bottom: 1em;
+    right: 1em;
+    left: 1em;
+    background: #041412;
+    color: #70a9a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 300ms;
+}
+  
+figcaption:hover { 
+    opacity: 1;
+}
+  
+.team-member .name {
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+}
+
+
