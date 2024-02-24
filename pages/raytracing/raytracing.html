@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-	<link rel="stylesheet" type="text/css" href="pages.css">
+	<link rel="stylesheet" type="text/css" href="../pages.css">
 
 	<section class="project-list">
 		<div class="grid-container">
 			<div class="profile-desc">
 				<h1 class="name-desc">Walter Svenddal</h1>
-				<p><a href="about.html">About Me</a>
-				</br><a href="career.html">Career</a>
-				</br><a href="../index.html">Projects</a>
-				</br><a href="resources.html">Resources</a>
+				<p><a href="../about.html">About Me</a>
+				</br><a href="../career.html">Career</a>
+				</br><a href="../../index.html">Projects</a>
+				</br><a href="../resources.html">Resources</a>
 				</p>
 			</div>
 			<div class="content">
-				<img class="top-pic" src="../images/raytracing.PNG">
+				<canvas id="theCanvas" width="500" height="500">
+					Please use a browser that supports "canvas"
+				</canvas>
+				<script src="src/types/vector.js"></script>
+				<script src="src/types/material.js"></script>
+				<script src="src/instances/cameras.js"></script>
+				<script src="src/instances/lights.js"></script>
+				<script src="src/instances/objects.js"></script>
+				<script src="src/rendering.js"></script>
+				<script src="src/main.js"></script>
+				<script>window.onload = main</script>
+				<p>
+					<b>X</b>: Left, <b>x</b>: Right<br/>
+					<b>Y</b>: Down, <b>y</b>: Up<br/>
+					<b>Z</b>: Forward, <b>z</b>: Backward<br/>
+					It's a bit slow, please be patient :)
+				</p>
 				<h1>
 					Javascript Raytracing Engine
 				</h1>
